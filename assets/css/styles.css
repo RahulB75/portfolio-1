@@ -821,3 +821,136 @@ body.dark-theme .portfolio-model__content {
         right: 24%;
     }
 }
+
+/* ===== IMPROVED MOBILE RESPONSIVENESS ===== */
+@media screen and (max-width: 768px) {
+    .bd-grid,
+    .about__container,
+    .skills__container,
+    .portfolio__container,
+    .work__container,
+    .contact__container,
+    .footer__container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about__container,
+    .skills__container,
+    .work__container,
+    .contact__container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .about__img,
+    .skills__img,
+    .work__img {
+        margin: 0 auto 1.5rem auto;
+        display: flex;
+        justify-content: center;
+        width: 80vw !important;
+        max-width: 220px;
+        height: auto;
+    }
+    .about__img img,
+    .skills__img img,
+    .work__img img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .home__container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        row-gap: 2rem;
+        padding: 2rem 0.5rem;
+    }
+
+    .home__img {
+        width: 80vw !important;
+        max-width: 220px;
+        position: static;
+        margin: 1.5rem auto 0 auto;
+    }
+
+    .section {
+        padding: 2rem 0.5rem;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .footer__data {
+        margin-bottom: 1.5rem;
+    }
+    .footer__social {
+        margin-right: 0.5rem;
+    }
+
+    .portfolio__container {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: none;
+        column-gap: 0;
+    }
+
+    .work__container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .work__img {
+        margin-top: 1rem;
+    }
+
+    .contact__container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    .contact__form {
+        width: 100% !important;
+        min-width: 0;
+    }
+    .contact__inputs {
+        grid-template-columns: 1fr !important;
+        column-gap: 0;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .home__title {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .about__subtitle {
+        font-size: 1.1rem;
+    }
+    .skills__subtitle {
+        font-size: 1rem;
+    }
+    .footer__button {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+    .about__img,
+    .skills__img,k
+    .work__img {
+        max-width: 140px;
+    }
+    .home__img {
+        max-width: 140px;
+    }
+    .section {
+        padding: 1.2rem 0.2rem;
+    }
+}
